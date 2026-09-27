@@ -8,7 +8,7 @@ The project-process kit writes this file once and never touches it again, and `C
 
 We take on a client, capture their brand once as a brand kit — design tokens down to the border widths, plus voice and audience — and the platform finds today's trends, makes short-form video in that kit, publishes it, and runs the marketing and ad campaigns behind it. [README.md](./README.md) holds the user stories and the site map; every feature traces back to one of those stories.
 
-- **Stack:** SvelteKit, Svelte 5, Tailwind CSS 4, TypeScript, Supabase (Auth + Postgres + Storage), Claude API, Vitest — laid out the same way as its sister projects, Your Business Today and Your Books Today.
+- **Stack:** SvelteKit, Svelte 5, Tailwind CSS 4, TypeScript, Supabase (Auth + Postgres), Vitest, and an MCP server at `/api/mcp` — laid out the same way as its sister projects, Your Business Today and Your Books Today.
 - **Commands:** `npm run dev`, `npm run check`, `npm test`, `npm run build`.
 - **The brand kit is data, not styling.** A client's colours, type, radii, border widths, spacing and motion are stored per brand and read by the video templates as tokens; no template holds a literal a brand kit should own.
 - **Schema:** numbered SQL files in `migrations/`, applied by hand to the live database; a pull request that adds one is labelled `migration-reviewed`.

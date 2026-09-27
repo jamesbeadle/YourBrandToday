@@ -59,39 +59,41 @@ platform makes is built from it. Nothing is off-brand because nothing is made ou
 | Route | What it is |
 | --- | --- |
 | `/` | The public site — what we do, how it works, and how to get in touch |
-| `/contact` | Enquiry form; enquiries become leads |
-| `/dashboard` | A client's home: this week's content, campaigns and results at a glance |
-| `/brand` | The brand kit — tokens, assets, tone of voice and audience |
-| `/trends` | What is rising today, scored for fit with the brand |
-| `/content` | The content calendar — drafts, approvals, scheduled and published posts |
-| `/content/[id]` | One video: script, storyboard, render, captions, comments and approval |
-| `/campaigns` | Paid campaigns, budgets and spend |
-| `/reports` | Performance across channels and campaigns |
-| `/channels` | Connected social and ad accounts |
-| `/clients` | Staff only — the client register and each brand's lifecycle |
-| `/admin` | Admin only — accounts, roles and the site model |
+| `/contact` | Enquiry form |
+| `/brands` | The brands you are on; staff take on new ones here |
+| `/brands/[brandId]` | Overview — how much of the brand is decided, what is waiting on whom, and who is on it |
+| `/brands/[brandId]/kit` | The brand kit, resolved for any medium, with a live preview in the brand's own tokens |
+| `/brands/[brandId]/trends` | What is rising, scored for fit with the brand |
+| `/brands/[brandId]/content` | Every piece from idea to published |
+| `/brands/[brandId]/content/[contentId]` | One piece: hook, script, storyboard, caption, reviews and approval |
+| `/brands/[brandId]/campaigns` | Paid campaigns, budgets and the pieces behind them |
+| `/brands/[brandId]/performance` | How the brand did, medium by medium |
+| `/admin` | Admin only — accounts and staff |
 | `/account` | Sign-in details and display name |
-| `/api/mcp` | The MCP server — the same platform, reachable from a client's own assistant |
+| `/api/mcp` | The MCP server — the same platform, from a person's own Claude ([docs/mcp-architecture.md](./docs/mcp-architecture.md)) |
 
 ## The brand kit
 
-The brand kit is the heart of the product. Every client's kit is a set of named tokens —
-the same idea as the `@theme` block in `src/app.css`, but per brand:
+The brand kit is the heart of the product, and it is not a list of colours. Every decision a
+brand makes — how it looks, moves, sounds and speaks, what it does, what it asks its audience
+to do and who that audience is — is a **trait**, decided at a **medium** (everywhere, video,
+TikTok, email…). Deeper mediums override shallower ones, so a border can be 2px everywhere and
+none on short-form video. Resolving the brand for a medium gives the brief a Claude writes to
+and the variables a template is styled with.
 
-- **Colour** — primary, secondary, accent, surface, ink, and the rules for contrast.
-- **Type** — display and body faces, weights, sizes and line heights.
-- **Shape** — radii, border widths, spacing scale, shadows.
-- **Motion** — transitions, caption animation, pacing and cut rhythm.
-- **Assets** — logos, marks, product shots, music and sound beds the brand is licensed for.
-- **Voice** — tone, vocabulary, words to use, words to avoid, and example posts.
-- **Audience** — who the brand is for, where they are, and what they respond to.
-
-Video templates read tokens, never literals, so changing a brand's border width changes it
-in every render from then on.
+[docs/brand-architecture.md](./docs/brand-architecture.md) is the design, and
+`src/lib/brand/` is the model — pure TypeScript, tested, with no database in it.
 
 ## Status
 
-New project. This README is the plan; the code follows it story by story.
+The platform runs end to end on data: brands and who is on them, the brand kit and its
+cascade, trends, content from draft to published with client approval, campaigns and
+performance — on the site and over MCP. The searching, the scripting and the reading of
+platform figures happen in a connected Claude and arrive through `/api/mcp`.
+
+Not built yet: rendering video from a storyboard, connecting social and ad accounts to
+publish and pull figures directly, and the platform proposing brand changes from performance
+on its own (a connected Claude can propose them today).
 
 ## Running locally
 
@@ -105,21 +107,20 @@ npm run dev
 | --- | --- |
 | `PUBLIC_SUPABASE_URL` | Supabase project URL |
 | `PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase publishable API key |
-| `SUPABASE_SECRET_KEY` | Supabase secret key — used by the MCP server and background jobs |
-| `ANTHROPIC_API_KEY` | Claude API key — trend scoring, scripts, storyboards and captions |
+| `SUPABASE_SECRET_KEY` | Supabase secret key — used by the MCP server, and to look people up when adding them to a brand |
 | `RESEND_API_KEY` / `EMAIL_FROM` | Resend API key and sender address for transactional email |
 | `ENQUIRY_NOTIFICATION_EMAIL` | Where website enquiries from `/contact` are sent |
 
-Keys for trend sources, video rendering, and each social and ad platform are added as each
-integration is built, and listed here when they are.
+Keys for video rendering and each social and ad platform are added as each integration is
+built, and listed here when they are.
 
-`migrations/` holds the schema; apply a migration by hand to the live database and label the
-pull request `migration-reviewed`.
+`migrations/` holds the schema, in order; apply each by hand with `scripts/run-migration.sh`
+and label the pull request `migration-reviewed`.
 
 ## Stack
 
-SvelteKit, Svelte 5, Tailwind CSS 4, TypeScript, Supabase (Auth + Postgres + Storage),
-Claude API, Vitest.
+SvelteKit, Svelte 5, Tailwind CSS 4, TypeScript, Supabase (Auth + Postgres), Vitest, and an
+MCP server for Claude.
 
 The layout matches its sister projects,
 [Your Business Today](https://github.com/jamesbeadle/yourbusinesstoday) and
@@ -130,9 +131,11 @@ src/
   app.css            Tailwind @theme tokens
   hooks.server.ts    Supabase session on every request
   lib/
+    brand/           The brand model: facets, traits, mediums, decisions, the cascade, projections
+    work/            What the brand does: trend, content and campaign vocabulary
     client/          Browser-side state (.svelte.ts)
     components/      Components grouped by area (site/, home/, brand/, content/ …)
-    server/          Commands and queries grouped by area (auth/, brand/, trends/ …)
+    server/          Commands and queries grouped by area (brands/, trends/, content/, mcp/ …)
   routes/            Pages, one folder per view in the site map
 migrations/          Numbered SQL migrations
 docs/                Architecture notes and runbooks

@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-09-27T19:39:03+00:00",
+  "generatedAt": "2026-09-27T20:06:56+00:00",
   "kitVersion": "1.12.0",
   "score": {
-    "overall": 100.0,
+    "overall": 89.8,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 100.0,
-        "weight": 5
+        "score": 93.4,
+        "weight": 52
       },
       {
         "group": "Design pattern file count",
-        "score": null,
-        "weight": 0
+        "score": 100.0,
+        "weight": 10
       },
       {
         "group": "Prose",
-        "score": null,
-        "weight": 0
+        "score": 82.1,
+        "weight": 20
       },
       {
         "group": "Widget adoption",
@@ -26,8 +26,8 @@
       },
       {
         "group": "Input validation",
-        "score": null,
-        "weight": 0
+        "score": 72.4,
+        "weight": 8
       }
     ],
     "elements": [
@@ -38,9 +38,10 @@
         "weight": 10,
         "zeroAt": 0.5,
         "unit": "files",
-        "isMeasured": false,
+        "isMeasured": true,
         "offenders": 0,
-        "score": null
+        "measuredAgainst": 274,
+        "score": 100.0
       },
       {
         "key": "worstFile",
@@ -61,9 +62,10 @@
         "weight": 8,
         "zeroAt": 0.25,
         "unit": "functions",
-        "isMeasured": false,
+        "isMeasured": true,
         "offenders": 0,
-        "score": null
+        "measuredAgainst": 305,
+        "score": 100.0
       },
       {
         "key": "elseBlocks",
@@ -72,9 +74,10 @@
         "weight": 5,
         "zeroAt": 0.5,
         "unit": "branches",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 1,
+        "measuredAgainst": 404,
+        "score": 99.5
       },
       {
         "key": "duplication",
@@ -94,9 +97,10 @@
         "weight": 4,
         "zeroAt": 50,
         "unit": "thousand lines",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 25,
+        "measuredAgainst": 8.62,
+        "score": 94.2
       },
       {
         "key": "magicValues",
@@ -105,9 +109,10 @@
         "weight": 4,
         "zeroAt": 20,
         "unit": "thousand lines",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 24,
+        "measuredAgainst": 8.62,
+        "score": 86.1
       },
       {
         "key": "orphans",
@@ -116,9 +121,10 @@
         "weight": 4,
         "zeroAt": 0.1,
         "unit": "components and functions",
-        "isMeasured": false,
+        "isMeasured": true,
         "offenders": 0,
-        "score": null
+        "measuredAgainst": 361,
+        "score": 100.0
       },
       {
         "key": "memberChains",
@@ -127,9 +133,10 @@
         "weight": 4,
         "zeroAt": 30,
         "unit": "thousand lines",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 148,
+        "measuredAgainst": 8.62,
+        "score": 42.8
       },
       {
         "key": "deepIndentation",
@@ -138,9 +145,10 @@
         "weight": 4,
         "zeroAt": 30,
         "unit": "thousand lines",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 21,
+        "measuredAgainst": 8.62,
+        "score": 91.9
       },
       {
         "key": "functionNames",
@@ -149,9 +157,10 @@
         "weight": 4,
         "zeroAt": 0.1,
         "unit": "functions",
-        "isMeasured": false,
+        "isMeasured": true,
         "offenders": 0,
-        "score": null
+        "measuredAgainst": 305,
+        "score": 100.0
       },
       {
         "key": "predictedFiles",
@@ -160,9 +169,10 @@
         "weight": 10,
         "zeroAt": 0.5,
         "unit": "predicted files",
-        "isMeasured": false,
+        "isMeasured": true,
         "offenders": 0,
-        "score": null
+        "measuredAgainst": 31,
+        "score": 100.0
       },
       {
         "key": "entityFileCounts",
@@ -182,9 +192,10 @@
         "weight": 8,
         "zeroAt": 0.25,
         "unit": "branches",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 19,
+        "measuredAgainst": 404,
+        "score": 81.2
       },
       {
         "key": "literalComparisons",
@@ -193,9 +204,10 @@
         "weight": 6,
         "zeroAt": 0.25,
         "unit": "branches",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 25,
+        "measuredAgainst": 404,
+        "score": 75.2
       },
       {
         "key": "gluedAccessors",
@@ -204,9 +216,10 @@
         "weight": 6,
         "zeroAt": 0.1,
         "unit": "functions",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 3,
+        "measuredAgainst": 305,
+        "score": 90.2
       },
       {
         "key": "handRolledWidgets",
@@ -226,9 +239,10 @@
         "weight": 8,
         "zeroAt": 0.5,
         "unit": "write doors",
-        "isMeasured": false,
-        "offenders": 0,
-        "score": null
+        "isMeasured": true,
+        "offenders": 4,
+        "measuredAgainst": 29,
+        "score": 72.4
       }
     ]
   },
@@ -236,17 +250,17 @@
     "fileLength": {
       "limit": 100,
       "filesOverLimit": 0,
-      "totalFiles": 0,
-      "totalLines": 0,
+      "totalFiles": 274,
+      "totalLines": 8618,
       "worstFileLines": 0,
       "worstFileTimesOverLimit": 0.0
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 0,
-      "totalFunctions": 0,
-      "elseBlocks": 0,
-      "ifBlocks": 0,
+      "totalFunctions": 305,
+      "elseBlocks": 1,
+      "ifBlocks": 404,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -255,68 +269,71 @@
       "maxLength": 40
     },
     "accessorNames": {
-      "gluedAccessorNames": 0,
+      "gluedAccessorNames": 3,
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "skipped": "jscpd is not installed (npm install -g jscpd)"
+      "skipped": "jscpd is not installed (npm install -g jscpd)",
+      "carriedFromBaseline": true
     },
     "naming": {
       "bannedAbbreviationHits": 0,
-      "unprefixedBooleans": 0
+      "unprefixedBooleans": 1
     },
     "comments": {
-      "explanatoryCommentLines": 0,
-      "filesWithComments": 0,
+      "explanatoryCommentLines": 25,
+      "filesWithComments": 9,
       "taskMarkers": 0
     },
     "magicValues": {
-      "inlineHexColours": 0,
-      "inlineStyleAttributes": 0,
-      "repeatedStringLiterals": 0
+      "inlineHexColours": 4,
+      "inlineStyleAttributes": 1,
+      "repeatedStringLiterals": 19
     },
     "prose": {
-      "longMemberChainLines": 0,
-      "deeplyIndentedLines": 0,
-      "overlongLines": 0,
+      "longMemberChainLines": 148,
+      "deeplyIndentedLines": 21,
+      "overlongLines": 60,
       "measurementIsHeuristic": true
     },
     "conditions": {
-      "tangledConditionLines": 0,
-      "literalComparisonLines": 0,
+      "tangledConditionLines": 19,
+      "literalComparisonLines": 25,
       "measurementIsHeuristic": true
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 0
+      "functionsExamined": 305
     },
     "designPatterns": {
-      "roleFamilies": 0,
-      "predictedFiles": 0,
+      "roleFamilies": 14,
+      "predictedFiles": 31,
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
       "measurementIsHeuristic": true
     },
     "inventory": {
-      "pages": 0,
-      "components": 0,
+      "pages": 17,
+      "components": 56,
       "orphanComponents": 0,
-      "averagePageLines": 0
+      "averagePageLines": 33
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
     },
     "inputValidation": {
-      "schemaTables": 0,
+      "schemaTables": 14,
       "limitedColumns": 0,
-      "writeDoors": 0,
-      "unvalidatedDoors": 0,
+      "writeDoors": 29,
+      "unvalidatedDoors": 4,
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 2,
-      "docs": 2
+      "totalFiles": 95,
+      "tooling": 80,
+      "docs": 13,
+      "infrastructure": 2
     }
   },
   "details": {
@@ -325,8 +342,8 @@
       "summary": {
         "limit": 100,
         "filesOverLimit": 0,
-        "totalFiles": 0,
-        "totalLines": 0,
+        "totalFiles": 274,
+        "totalLines": 8618,
         "worstFileLines": 0,
         "worstFileTimesOverLimit": 0.0
       },
@@ -337,9 +354,9 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 0,
-        "totalFunctions": 0,
-        "elseBlocks": 0,
-        "ifBlocks": 0,
+        "totalFunctions": 305,
+        "elseBlocks": 1,
+        "ifBlocks": 404,
         "measurementIsHeuristic": true
       },
       "offenders": []
@@ -356,27 +373,49 @@
     "accessorNames": {
       "name": "accessorNames",
       "summary": {
-        "gluedAccessorNames": 0,
+        "gluedAccessorNames": 3,
         "measurementIsHeuristic": true
       },
-      "offenders": []
+      "offenders": [
+        {
+          "file": "src/lib/server/brands/getBrand.ts",
+          "line": 17,
+          "name": "getBrandMembers"
+        },
+        {
+          "file": "src/lib/server/brands/readDecisionForm.ts",
+          "line": 8,
+          "name": "readDecisionForm"
+        },
+        {
+          "file": "src/lib/server/campaigns/planCampaign.ts",
+          "line": 9,
+          "name": "readCampaignDraft"
+        }
+      ]
     },
     "naming": {
       "name": "naming",
       "summary": {
         "bannedAbbreviationHits": 0,
-        "unprefixedBooleans": 0
+        "unprefixedBooleans": 1
       },
       "offenders": {
         "abbreviations": [],
-        "booleans": []
+        "booleans": [
+          {
+            "file": "src/lib/server/mcp/actions/brandAction.ts",
+            "line": 44,
+            "name": "needsShaping"
+          }
+        ]
       }
     },
     "comments": {
       "name": "comments",
       "summary": {
-        "explanatoryCommentLines": 0,
-        "filesWithComments": 0,
+        "explanatoryCommentLines": 25,
+        "filesWithComments": 9,
         "taskMarkers": 0
       },
       "offenders": []
@@ -384,63 +423,857 @@
     "magicValues": {
       "name": "magicValues",
       "summary": {
-        "inlineHexColours": 0,
-        "inlineStyleAttributes": 0,
-        "repeatedStringLiterals": 0
+        "inlineHexColours": 4,
+        "inlineStyleAttributes": 1,
+        "repeatedStringLiterals": 19
       },
       "offenders": {
-        "hexColours": [],
-        "inlineStyles": [],
-        "repeatedLiterals": []
+        "hexColours": [
+          {
+            "file": "src/lib/components/account/GoogleSignInButton.svelte",
+            "line": 14
+          },
+          {
+            "file": "src/lib/components/account/GoogleSignInButton.svelte",
+            "line": 18
+          },
+          {
+            "file": "src/lib/components/account/GoogleSignInButton.svelte",
+            "line": 21
+          },
+          {
+            "file": "src/lib/components/account/GoogleSignInButton.svelte",
+            "line": 23
+          }
+        ],
+        "inlineStyles": [
+          {
+            "file": "src/lib/components/site/BrandWordmark.svelte",
+            "line": 7
+          }
+        ],
+        "repeatedLiterals": [
+          {
+            "literal": "submit",
+            "occurrences": 17
+          },
+          {
+            "literal": "flex flex-col gap-1",
+            "occurrences": 11
+          },
+          {
+            "literal": "font-display text-xl font-medium",
+            "occurrences": 11
+          },
+          {
+            "literal": "font-display text-3xl font-medium",
+            "occurrences": 11
+          },
+          {
+            "literal": "hidden",
+            "occurrences": 10
+          },
+          {
+            "literal": "button",
+            "occurrences": 10
+          },
+          {
+            "literal": "flex flex-col gap-2",
+            "occurrences": 10
+          },
+          {
+            "literal": "text-sm text-chalk/70",
+            "occurrences": 9
+          },
+          {
+            "literal": "text-sm text-chalk/60",
+            "occurrences": 9
+          },
+          {
+            "literal": "font-display text-lg font-medium",
+            "occurrences": 8
+          },
+          {
+            "literal": "text-chalk/70",
+            "occurrences": 8
+          },
+          {
+            "literal": "p-3 text-right font-normal",
+            "occurrences": 6
+          },
+          {
+            "literal": "p-3 text-right",
+            "occurrences": 6
+          },
+          {
+            "literal": "flex flex-col gap-4",
+            "occurrences": 5
+          },
+          {
+            "literal": "password",
+            "occurrences": 5
+          },
+          {
+            "literal": "text-xs text-chalk/50",
+            "occurrences": 5
+          },
+          {
+            "literal": "flex flex-wrap items-center gap-3",
+            "occurrences": 4
+          },
+          {
+            "literal": "status",
+            "occurrences": 4
+          },
+          {
+            "literal": "description",
+            "occurrences": 4
+          }
+        ]
       }
     },
     "prose": {
       "name": "prose",
       "summary": {
-        "longMemberChainLines": 0,
-        "deeplyIndentedLines": 0,
-        "overlongLines": 0,
+        "longMemberChainLines": 148,
+        "deeplyIndentedLines": 21,
+        "overlongLines": 60,
         "measurementIsHeuristic": true
       },
       "offenders": {
-        "memberChains": [],
-        "deepIndentation": [],
-        "overlongLines": []
+        "memberChains": [
+          {
+            "file": "src/hooks.server.ts",
+            "line": 16
+          },
+          {
+            "file": "src/hooks.server.ts",
+            "line": 27
+          },
+          {
+            "file": "src/hooks.server.ts",
+            "line": 28
+          },
+          {
+            "file": "src/hooks.server.ts",
+            "line": 29
+          },
+          {
+            "file": "src/hooks.server.ts",
+            "line": 31
+          },
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 31
+          },
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 32
+          },
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 35
+          },
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 38
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 10
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 11
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 16
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 17
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 23
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 28
+          },
+          {
+            "file": "src/lib/brand/decisions/checkDecision.test.ts",
+            "line": 44
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 12
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 13
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 17
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 18
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/brand/mediums/channelMediums.ts",
+            "line": 23
+          },
+          {
+            "file": "src/lib/brand/projections/brandBrief.ts",
+            "line": 10
+          },
+          {
+            "file": "src/lib/brand/projections/brandBrief.ts",
+            "line": 20
+          },
+          {
+            "file": "src/lib/brand/projections/brandBrief.ts",
+            "line": 23
+          },
+          {
+            "file": "src/lib/brand/projections/brandBrief.ts",
+            "line": 29
+          },
+          {
+            "file": "src/lib/brand/projections/brandBrief.ts",
+            "line": 34
+          },
+          {
+            "file": "src/lib/brand/projections/cssVariables.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/brand/projections/cssVariables.ts",
+            "line": 13
+          },
+          {
+            "file": "src/lib/brand/projections/projections.test.ts",
+            "line": 11
+          },
+          {
+            "file": "src/lib/brand/projections/projections.test.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/brand/projections/projections.test.ts",
+            "line": 19
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 12
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 13
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 14
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 23
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 24
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 28
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 29
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 34
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 36
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 41
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 50
+          },
+          {
+            "file": "src/lib/brand/resolution/resolveBrand.test.ts",
+            "line": 51
+          }
+        ],
+        "deepIndentation": [
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 42
+          },
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 43
+          },
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 44
+          },
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 46
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 24
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 31
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 32
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 33
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 34
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 35
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 36
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 37
+          },
+          {
+            "file": "src/lib/components/brand/ProposedDecisions.svelte",
+            "line": 38
+          },
+          {
+            "file": "src/lib/components/content/ContentColumn.svelte",
+            "line": 21
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 63
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 64
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 65
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 66
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 68
+          },
+          {
+            "file": "src/lib/components/site/Modal.svelte",
+            "line": 39
+          },
+          {
+            "file": "src/lib/components/site/SiteHeader.svelte",
+            "line": 41
+          }
+        ],
+        "overlongLines": [
+          {
+            "file": "src/lib/brand/traits/lookTraits.ts",
+            "line": 24
+          },
+          {
+            "file": "src/lib/brand/traits/motionTraits.ts",
+            "line": 7
+          },
+          {
+            "file": "src/lib/brand/traits/motionTraits.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/data/howItWorksSteps.ts",
+            "line": 7
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 9
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 19
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 28
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 29
+          },
+          {
+            "file": "src/lib/data/legal/privacyCollectionSections.ts",
+            "line": 36
+          },
+          {
+            "file": "src/lib/data/legal/privacyRightsSections.ts",
+            "line": 7
+          },
+          {
+            "file": "src/lib/data/legal/privacyRightsSections.ts",
+            "line": 13
+          },
+          {
+            "file": "src/lib/data/legal/privacyRightsSections.ts",
+            "line": 14
+          },
+          {
+            "file": "src/lib/data/legal/privacyRightsSections.ts",
+            "line": 20
+          },
+          {
+            "file": "src/lib/data/legal/privacyRightsSections.ts",
+            "line": 26
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 19
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 25
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 31
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 32
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 33
+          },
+          {
+            "file": "src/lib/data/legal/privacySharingSections.ts",
+            "line": 34
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 9
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 28
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 34
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 35
+          },
+          {
+            "file": "src/lib/data/legal/termsAccountSections.ts",
+            "line": 36
+          },
+          {
+            "file": "src/lib/data/legal/termsGeneralSections.ts",
+            "line": 19
+          },
+          {
+            "file": "src/lib/data/legal/termsGeneralSections.ts",
+            "line": 26
+          },
+          {
+            "file": "src/lib/data/legal/termsGeneralSections.ts",
+            "line": 27
+          },
+          {
+            "file": "src/lib/data/legal/termsGeneralSections.ts",
+            "line": 33
+          },
+          {
+            "file": "src/lib/data/legal/termsGeneralSections.ts",
+            "line": 39
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 7
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 8
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 9
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 16
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 23
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 30
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 31
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 37
+          },
+          {
+            "file": "src/lib/data/legal/termsProductSections.ts",
+            "line": 43
+          },
+          {
+            "file": "src/lib/data/privacyStatement.ts",
+            "line": 9
+          },
+          {
+            "file": "src/lib/data/termsOfService.ts",
+            "line": 9
+          },
+          {
+            "file": "src/lib/server/mcp/actions/brandKitWriteActions.ts",
+            "line": 33
+          },
+          {
+            "file": "src/lib/server/mcp/actions/campaignActions.ts",
+            "line": 38
+          },
+          {
+            "file": "src/lib/server/mcp/actions/contentActions.ts",
+            "line": 29
+          }
+        ]
       }
     },
     "conditions": {
       "name": "conditions",
       "summary": {
-        "tangledConditionLines": 0,
-        "literalComparisonLines": 0,
+        "tangledConditionLines": 19,
+        "literalComparisonLines": 25,
         "measurementIsHeuristic": true
       },
       "offenders": {
-        "tangled": [],
-        "literalComparisons": []
+        "tangled": [
+          {
+            "file": "src/lib/brand/values/compoundReaders.ts",
+            "line": 35
+          },
+          {
+            "file": "src/lib/brand/values/readTraitValue.ts",
+            "line": 27
+          },
+          {
+            "file": "src/lib/components/site/siteNavigation.ts",
+            "line": 16
+          },
+          {
+            "file": "src/lib/server/campaigns/runCampaign.ts",
+            "line": 18
+          },
+          {
+            "file": "src/lib/server/http/addressRateLimit.ts",
+            "line": 39
+          },
+          {
+            "file": "src/lib/server/input/readInput.ts",
+            "line": 25
+          },
+          {
+            "file": "src/lib/server/input/readInput.ts",
+            "line": 37
+          },
+          {
+            "file": "src/lib/server/input/readNumbers.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/server/input/readNumbers.ts",
+            "line": 27
+          },
+          {
+            "file": "src/lib/server/mcp/resolveMcpCaller.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/server/oauth/isAuthorizationCodeUsable.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/server/oauth/readTokenRequest.ts",
+            "line": 50
+          },
+          {
+            "file": "src/lib/server/oauth/refreshAccessToken.ts",
+            "line": 19
+          },
+          {
+            "file": "src/lib/server/tokens/apiToken.ts",
+            "line": 5
+          },
+          {
+            "file": "src/lib/server/web/parsePublicUrl.ts",
+            "line": 25
+          },
+          {
+            "file": "src/routes/account/sign-in/+page.server.ts",
+            "line": 18
+          },
+          {
+            "file": "src/routes/contact/+page.server.ts",
+            "line": 20
+          },
+          {
+            "file": "src/routes/oauth/authorize/+page.server.ts",
+            "line": 61
+          },
+          {
+            "file": "src/routes/oauth/register/+server.ts",
+            "line": 16
+          }
+        ],
+        "literalComparisons": [
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 28
+          },
+          {
+            "file": "src/lib/brand/decisions/checkCustomTrait.ts",
+            "line": 31
+          },
+          {
+            "file": "src/lib/brand/values/readTraitValue.ts",
+            "line": 25
+          },
+          {
+            "file": "src/lib/brand/values/readTraitValue.ts",
+            "line": 26
+          },
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 41
+          },
+          {
+            "file": "src/lib/client/formTracker.svelte.ts",
+            "line": 45
+          },
+          {
+            "file": "src/lib/server/brands/brandRole.ts",
+            "line": 32
+          },
+          {
+            "file": "src/lib/server/brands/changeDecisionStatus.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/server/brands/changeDecisionStatus.ts",
+            "line": 22
+          },
+          {
+            "file": "src/lib/server/brands/recordDecision.ts",
+            "line": 29
+          },
+          {
+            "file": "src/lib/server/content/reviewContent.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/server/mcp/actions/brandMembershipActions.ts",
+            "line": 45
+          },
+          {
+            "file": "src/lib/server/mcp/resolveMcpCaller.ts",
+            "line": 21
+          },
+          {
+            "file": "src/lib/server/oauth/authorizationRequest.ts",
+            "line": 15
+          },
+          {
+            "file": "src/lib/server/oauth/readClientRegistration.ts",
+            "line": 59
+          },
+          {
+            "file": "src/lib/server/oauth/refreshAccessToken.ts",
+            "line": 16
+          },
+          {
+            "file": "src/routes/brands/[brandId]/+page.server.ts",
+            "line": 32
+          },
+          {
+            "file": "src/routes/oauth/token/+server.ts",
+            "line": 32
+          },
+          {
+            "file": "src/routes/oauth/token/+server.ts",
+            "line": 39
+          },
+          {
+            "file": "src/lib/components/brand/DecisionForm.svelte",
+            "line": 29
+          },
+          {
+            "file": "src/lib/components/brand/DecisionForm.svelte",
+            "line": 36
+          },
+          {
+            "file": "src/lib/components/brand/TraitValueView.svelte",
+            "line": 25
+          },
+          {
+            "file": "src/lib/components/site/AccountMenu.svelte",
+            "line": 13
+          },
+          {
+            "file": "src/lib/components/site/MobileNavDrawer.svelte",
+            "line": 19
+          },
+          {
+            "file": "src/lib/components/site/Modal.svelte",
+            "line": 16
+          }
+        ]
       }
     },
     "orphans": {
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 0
+        "functionsExamined": 305
       },
       "offenders": []
     },
     "designPatterns": {
       "name": "designPatterns",
       "summary": {
-        "roleFamilies": 0,
-        "predictedFiles": 0,
+        "roleFamilies": 14,
+        "predictedFiles": 31,
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
         "measurementIsHeuristic": true
       },
       "offenders": {
-        "roleFamilies": {},
-        "patterns": [],
+        "roleFamilies": {
+          "+page.server.ts": 14,
+          "+page.svelte": 17,
+          "+server.ts": 8,
+          "action": 4,
+          "actions": 12,
+          "brand": 6,
+          "catalogue": 4,
+          "content": 5,
+          "form": 11,
+          "password": 4,
+          "section": 5,
+          "sections": 6,
+          "test": 9,
+          "traits": 6
+        },
+        "patterns": [
+          {
+            "pattern": "every +page.server.ts has a +page.svelte",
+            "predicted": 14,
+            "missing": []
+          },
+          {
+            "pattern": "every +page.svelte has a +page.server.ts",
+            "predicted": 17,
+            "missing": [
+              "src/routes/+page.server.ts",
+              "src/routes/privacy/+page.server.ts",
+              "src/routes/terms/+page.server.ts"
+            ]
+          }
+        ],
         "missingPredictedFiles": [],
         "entityFileCounts": []
       }
@@ -448,14 +1281,351 @@
     "inventory": {
       "name": "inventory",
       "summary": {
-        "pages": 0,
-        "components": 0,
+        "pages": 17,
+        "components": 56,
         "orphanComponents": 0,
-        "averagePageLines": 0
+        "averagePageLines": 33
       },
       "offenders": {
-        "pages": [],
-        "componentReuse": [],
+        "pages": [
+          {
+            "page": "src/routes/account/+page.svelte",
+            "lines": 59,
+            "widgets": [
+              "modal",
+              "form",
+              "submit"
+            ]
+          },
+          {
+            "page": "src/routes/account/set-password/+page.svelte",
+            "lines": 47,
+            "widgets": [
+              "form",
+              "error"
+            ]
+          },
+          {
+            "page": "src/routes/contact/+page.svelte",
+            "lines": 46,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/account/sign-in/+page.svelte",
+            "lines": 41,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/brands/[brandId]/kit/+page.svelte",
+            "lines": 41,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/oauth/authorize/+page.svelte",
+            "lines": 39,
+            "widgets": [
+              "form",
+              "submit"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/performance/+page.svelte",
+            "lines": 35,
+            "widgets": [
+              "form"
+            ]
+          },
+          {
+            "page": "src/routes/brands/+page.svelte",
+            "lines": 33,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/content/+page.svelte",
+            "lines": 32,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/campaigns/+page.svelte",
+            "lines": 31,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/trends/+page.svelte",
+            "lines": 31,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/content/[contentId]/+page.svelte",
+            "lines": 30,
+            "widgets": [
+              "badge"
+            ]
+          },
+          {
+            "page": "src/routes/+page.svelte",
+            "lines": 27,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/admin/+page.svelte",
+            "lines": 27,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/brands/[brandId]/+page.svelte",
+            "lines": 26,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/privacy/+page.svelte",
+            "lines": 11,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/terms/+page.svelte",
+            "lines": 11,
+            "widgets": []
+          }
+        ],
+        "componentReuse": [
+          {
+            "component": "src/lib/components/site/CommandForm.svelte",
+            "reusedBy": 12
+          },
+          {
+            "component": "src/lib/components/site/SubmitButton.svelte",
+            "reusedBy": 11
+          },
+          {
+            "component": "src/lib/components/site/FormField.svelte",
+            "reusedBy": 8
+          },
+          {
+            "component": "src/lib/components/site/PageHeader.svelte",
+            "reusedBy": 8
+          },
+          {
+            "component": "src/lib/components/site/FormOutcome.svelte",
+            "reusedBy": 7
+          },
+          {
+            "component": "src/lib/components/site/StatusBadge.svelte",
+            "reusedBy": 7
+          },
+          {
+            "component": "src/lib/components/site/EmptyState.svelte",
+            "reusedBy": 5
+          },
+          {
+            "component": "src/lib/components/site/FormErrorNote.svelte",
+            "reusedBy": 5
+          },
+          {
+            "component": "src/lib/components/brand/TraitValueView.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/site/BrandWordmark.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/site/LegalArticle.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/site/MediumField.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/site/StatTile.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/account/DisplayNameForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/account/EmailPasswordForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/account/GoogleSignInButton.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/AdminActionsMenu.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/AdminMenuAction.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/AdminUserRow.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/BrandCard.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/BrandMembers.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/BrandPreview.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/BrandSubNavigation.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/DecisionForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/FacetCompletenessList.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/FacetSection.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/MediumPicker.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/ProposedDecisions.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/ResolvedTraitRow.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/TakeOnBrandForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/brand/TraitSelect.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/campaigns/CampaignCard.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/campaigns/PlanCampaignForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/ContactForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/EnquiryThankYou.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/ContentColumn.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/ContentFlowPanel.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/ContentPreview.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/DraftContentForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/ReviewPanel.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/content/StoryboardList.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/ConnectSection.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/FacetsSection.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HeroSection.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HowItWorksSection.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/performance/PerformanceTable.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/AccountMenu.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/MobileMenuButton.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/MobileNavDrawer.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/MobileNavGroup.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/Modal.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/NavigationProgressBar.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/SiteFooter.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/site/SiteHeader.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/trends/RecordTrendForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/trends/TrendRow.svelte",
+            "reusedBy": 1
+          }
+        ],
         "orphans": []
       }
     },
@@ -471,12 +1641,26 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 2,
-        "docs": 2
+        "totalFiles": 95,
+        "tooling": 80,
+        "docs": 13,
+        "infrastructure": 2
       },
       "offenders": [
         {
+          "area": "tooling",
+          "files": 80,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
           "area": "docs",
+          "files": 13,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
+          "area": "infrastructure",
           "files": 2,
           "sourceFiles": 0,
           "sourceLines": 0
@@ -486,21 +1670,50 @@
     "inputValidation": {
       "name": "inputValidation",
       "summary": {
-        "schemaTables": 0,
+        "schemaTables": 14,
         "limitedColumns": 0,
-        "writeDoors": 0,
-        "unvalidatedDoors": 0,
+        "writeDoors": 29,
+        "unvalidatedDoors": 4,
         "looserLimits": 0
       },
       "offenders": {
-        "unvalidated": [],
+        "unvalidated": [
+          {
+            "file": "src/lib/server/mcp/resolveMcpCaller.ts",
+            "tables": [
+              "oauthtoken"
+            ]
+          },
+          {
+            "file": "src/routes/oauth/authorize/+page.server.ts",
+            "tables": [
+              "oauthauthorizationcode",
+              "oauthtoken"
+            ]
+          },
+          {
+            "file": "src/routes/oauth/register/+server.ts",
+            "tables": [
+              "oauthclient",
+              "oauthtoken"
+            ]
+          },
+          {
+            "file": "src/routes/oauth/token/+server.ts",
+            "tables": [
+              "oauthauthorizationcode",
+              "oauthtoken"
+            ]
+          }
+        ],
         "looserLimits": []
       }
     },
     "duplication": {
       "name": "duplication",
       "summary": {
-        "skipped": "jscpd is not installed (npm install -g jscpd)"
+        "skipped": "jscpd is not installed (npm install -g jscpd)",
+        "carriedFromBaseline": true
       },
       "offenders": []
     }
